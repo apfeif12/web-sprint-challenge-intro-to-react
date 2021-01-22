@@ -2,14 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import Character from "./components/Character.js";
 import axios from "axios";
-import styled from "styled-components";
-
-const StyledH1 = styled.h1`
-  font-size: 50px;
-  font-weight: bold;
-  text-decoration: underline;
-  color: white;
-`;
+import Header from "./components/Header.js";
 
 const App = () => {
   const [charData, setCharData] = useState([]);
@@ -29,7 +22,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <StyledH1 className="Header">Rick and Morrrrrrrrty Characters!</StyledH1>
+      <Header />
       <Character charData={charData} />
     </div>
   );
