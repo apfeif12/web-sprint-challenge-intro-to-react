@@ -4,6 +4,8 @@ import Character from "./components/Character.js";
 import axios from "axios";
 import Header from "./components/Header.js";
 
+// test add
+
 const App = () => {
   const [charData, setCharData] = useState([]);
   useEffect(() => {
